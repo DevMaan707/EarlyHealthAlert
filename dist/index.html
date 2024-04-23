@@ -4,48 +4,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="output.css">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="output.css">
 </head>
 <body class="bg-pink-400">
     <header>
    
-        <nav class ="container mx-auto  flex justify-between items-center">
+        <nav class ="container mx-auto py-5 flex justify-between items-center">
             <div class="font-bold text-2xl px-9">
                 <a href="#">EarlyHeartAlert</a>
             </div>
             <div >
                 <ul class="hidden lg:flex items-center space-x-6 px-16" >
                 
-                    <li> <button class="px-16  text-green-400 ease-in duration-200 font-bold">Follow US</button></li>
+                    <li> <button class="px-16  bg-blue-700 ease-in duration-200 font-bold rounded-md text-white py-1">Follow US</button></li>
                     <li><a href="#" class="hover:text-green-400 ease-in duration-200"><i class="fa-brands fa-instagram"></i></a></li>
                     <li><a href="#" class="hover:text-green-400 ease-in duration-200"><i class="fa-brands fa-twitter"></i></a></li>
                     <li><a href="#" class="hover:text-green-400 ease-in duration-200"><i class="fa-brands fa-linkedin"></i></a></li>
                     <li><a href="#" class="hover:text-green-400 ease-in duration-200"><i class="fa-brands fa-facebook"></i></a></li>
                 </ul>
             </div>
-            <div id="hamburger" class="lg:hidden cursor-pointer">
+            <div id="hamburger" class="lg:hidden cursor-pointer mr-10">
                 <i class="fa-solid fa-bars"></i>
             </div>
             
         </nav>
     </header>
     <main >
-        <section id="home px-9">
-            <div class="container py-20">
-                <div class="flex flex-col items-center  z-20 md:flex-row">
+        <section id="home" class="pt-10">
+            <div class="container py-20 ">
+                <div class="flex flex-col items-center z-20 md:flex-row ">
                     <div class="text-left mb-12 md:w-1/2 md:pr-10">
-                        <h1 class="font-bold text-4xl mx-10 leading-snug">Connect with your Heart</h1>
+                        <h1 class="font-bold text-4xl mx-10 leading-snug mt-20 mb-4 sm:text-center lg:text-left">Connect with your Heart</h1>
                         <p class="leading-relaxed mx-10">Taking care of your heartis about more than just physical health
                              .Its about connecting with your emotions , reducing stress , and finding balance in your life .
                               Take time to connect with your heart and improve your overall well-being.</p>
-                              <button class="py-5 my-16 px-5 mx-10">Contact us</button>
+                              <button class=" my-10 p-3  mx-10 bg-blue-700 rounded-lg font-bold text-white  ">Contact us</button>
+
                     </div>
                     <div>
                         <!-- Image -->
                     </div>
                 </div>
             </div>
+        </section>
+        <section id="userform" class="flex justify-center items-center">
+                <div class="w-1/3 bg-blue-500 justify-center mt-10 pt-10 pb-10">
+                    <h1 class="font-bold text-3xl text-center">Early Heart Alert</h1>
+                    <div class="mx-10 mt-10">
+                    <form action="/submit" method="post" class="flex-row"  >
+                        
+                        <h1 class="mb-3 font-bold">Name</h1>
+                        <input type="text" id="name" name="name" required class="px-25 py-2 w-2/3 mb-5 rounded-lg "><br>
+                
+                       <h1 class="mb-3 font-bold">Age</h1>
+                        <input type="number" id="age" name="age" min="1" max="120" class="px-25 py-2 w-2/3 mb-5 rounded-lg " required><br>
+                
+                        <h1 class="mb-3 font-bold">City</h1>
+                        <input type="text" id="city" name="city" class="px-25 py-2 w-2/3 mb-5 rounded-lg" required><br>
+                
+                        <h1 class="mb-3 font-bold">Postal code</h1>
+                        <input type="text" id="pincode" name="pincode" pattern="[0-9]{6}" class="px-25 py-2 w-2/3 rounded-lg" maxlength="6" required>
+                        
+                
+                        
+                        <div class="mt-10">
+                            <input type="submit" value="Submit" class="bg-red-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+
+                        </div>
+                       
+                        
+                    </form>
+                </div>
+                </div>
+                <div class="w-2/3"></div>
+        </section>
+        <section id="end ">
+            <div class="mt-10 mb-10 mx-10">
+                <h1 class="text-3xl font-bold">Engage with us!</h1>
+                <div >
+                    <ul class="hidden lg:flex items-center space-x-6 px-16 mt-10" >
+                    
+                       
+                        <li><a href="#" class="hover:text-green-400 ease-in duration-200"><i class="fa-brands fa-instagram fa-2xl"></i></a></li>
+                        <li><a href="#" class="hover:text-green-400 ease-in duration-200"><i class="fa-brands fa-twitter  fa-2xl"></i></a></li>
+                        <li><a href="#" class="hover:text-green-400 ease-in duration-200"><i class="fa-brands fa-linkedin  fa-2xl"></i></a></li>
+                        <li><a href="#" class="hover:text-green-400 ease-in duration-200"><i class="fa-brands fa-facebook  fa-2xl"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mx-10">
+                <h1 class="text-3xl font-bold mb-5">Contact us</h1>
+            <h1 class="mb-10 font-bold">Phone: </h1> 
+            </div>
+            
+            <a href="#" class="mx-10 font-bold">Learn More</a>
+            <div class="w-full bg-gray-300 h-px mt-10"></div>
+            <h1 class="mx-10" class="text-3xl font-bold">Privacy Statements</h1>
+            <h1 class="mx-10 mb-10">Disclaimer</h1>
         </section>
     </main>
     
