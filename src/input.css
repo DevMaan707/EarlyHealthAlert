@@ -11,11 +11,14 @@
 }
 
 .title{
-    @apply text-3xl font-bold;
+  @apply text-3xl font-bold;
 }
 
 .defMargin{
     @apply mx-10;
+}
+.titlesm{
+  @apply text-xl font-bold;
 }
 
 /* .poppins-thin {
